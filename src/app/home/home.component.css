@@ -1,0 +1,248 @@
+.name {
+    display: flex;
+    flex-direction: start;
+    color: white;
+    font-size: calc(1.5vw + .8rem);
+}
+
+.h {
+    color: red;
+    font-size: calc(1.8vw + .8rem);
+}
+
+.w {
+    color: yellow;
+    font-size: calc(1.3vw + .8rem);
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
+    margin-top: max(29px);
+}
+
+.social img {
+    max-width: 36px;
+    margin-left: max(10px);
+}
+
+.h1text {
+    font-size: calc(1.5vw + .8rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: start;
+    color: white;
+}
+
+.h1text1 {
+    font-size: calc(1.5vw + .8rem);
+    display: flex;
+    justify-content: flex-start;
+    text-align: start;
+    color: white;
+}
+
+
+.homeContainer {
+    display: flex;
+    justify-content: flex-start;
+    text-align: end;
+    border: 0;
+    margin: 3vw 5vw 1vw;
+    column-gap: 20vw;
+    /* display: flex;
+    justify-content: center;
+    text-align: end;
+    border: 0;
+    padding: 0;
+    margin-top: min(-35px); */
+}
+
+.pic {
+    border-radius: 100%;
+    border-color: red;
+    width: 20vw;
+    height: 27vw;
+    margin: 1vw 1px;
+    border: 3px solid;
+    transition: .5s;
+}
+
+.pic:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.textcontainer {
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* margin-top: 196px;
+    margin-right: 360px;
+    margin-left: -64px; */
+}
+
+.aboutbtn {
+    margin: 45px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.button-85 {
+    text-decoration: none;
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 1000px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-85:before {
+    content: "";
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: 7px;
+    left: 4px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: 100%;
+    height: 100%;
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 1000px;
+}
+
+@keyframes glowing-button-85 {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.button-85:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 1000px;
+}
+
+.waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px;
+    /*Fix for safari gap*/
+    min-height: 67px;
+    max-height: 100px;
+}
+
+.content {
+    position: relative;
+    height: 20vh;
+    text-align: center;
+    background-color: white;
+}
+
+/* Animation */
+
+.parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+    .waves {
+        height: 40px;
+        min-height: 40px;
+    }
+
+    /* .content {
+        height: 30vh;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+*/
+    .homeContainer {
+        flex-direction: column;
+    } 
+
+   .pic{
+        height: 53vw;
+            width: 43vw;
+                margin: 5% 27%;
+   }
+}
+
+@media (max-width:500px) {
+    /* .h1text1 {
+        gap: 18px;
+
+        flex-direction: column;
+    } */
+
+    .homeContainer {
+        margin: 0 0;
+    }
+
+    .textcontainer {
+        align-items: flex-start;
+    }
+}

@@ -1,0 +1,124 @@
+* {
+    scroll-behavior: smooth;
+}
+
+a {
+    transition: .5s;
+}
+
+a:hover {
+    transform: scale(1.1);
+}
+
+
+
+.project-item {
+    display: flex;
+    margin: 2rem 4vw;
+    align-content: space-between;
+    padding: 0;
+    gap: 3vw;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    position: relative;
+    display: block;
+    height: 17.5vw;
+    width: 23vw;
+    border-radius: 4vw;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.card__image {
+    width: 100%;
+    height: auto;
+}
+
+.card__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    border-radius: 45px;
+    background-color: white;
+    transform: translateY(100%);
+    transition: .2s ease-in-out;
+}
+
+.card:hover .card__overlay {
+    transform: translateY(0);
+}
+
+.card__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    padding: 2em;
+    border-radius: 45px;
+    background-color: white;
+    transform: translateY(-100%);
+    transition: .2s ease-in-out;
+}
+
+
+
+.card:hover .card__header {
+    transform: translateY(0);
+}
+
+.card__thumb {
+    flex-shrink: 0;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+}
+
+.card__title {
+    font-size: calc(1vw + .7rem);
+    margin: 0;
+    color: #6A515E;
+}
+
+.card__title1 {
+
+    font-size: calc(1vw + .5rem);
+    margin: 0;
+    color: #6A515E;
+
+}
+
+
+
+
+.card__description {
+    padding: 0 0.5em 0.5em;
+    margin: 0;
+    text-align: center;
+    font-family: "MockFlowFont";
+
+}
+
+.source {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width:1000px) {
+    .card {
+        height: 43.5vw;
+        width: 57vw;
+        border-radius: 9vw;
+    }
+
+    .project-item {
+        flex-direction: row;
+    }
+}

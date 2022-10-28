@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+
+.main_abt {
+    display: flex;
+    flex-direction: row;
+    margin: 2vw 4.5vw;
+    flex-wrap: wrap;
+        justify-content: center;
+}
+
+.about_info {
+    color: whitesmoke;
+    text-align: justify;
+    padding: 2%;
+    margin: 0;
+}
+
+.about_info p {
+    margin-top: 20px;
+    letter-spacing: 1px;
+    line-height: 34px;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: calc(.5vw + .8rem);
+}
+
+.head {
+    color: bisque;
+    letter-spacing: 2px;
+     
+    text-align: left;
+    font-size: calc(1vw + 1rem);
+}
+
+.skills {
+    color: whitesmoke;
+    text-align: justify;
+        margin: 0.1vw 3.5vw;
+    /* padding-top: 43px; */
+}
+
+.skill_list {
+     
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-between;
+    justify-content: center;
+}
+
+.skill_list p {
+    margin: 1vw;
+}
+
+.contactbtn {
+    margin: 3vw;
+    display: flex;
+    justify-content: center;
+        gap: 5%;
+
+}
+
+ 
+
+.resumebtn {
+        margin: 3vw;
+            display: flex;
+            justify-content: center;
+            margin-right: 3vw;
+
+}
+
+a {
+    transition: .5s;
+}
+
+a:hover {
+    transform: scale(1.1);
+}
+
+
+
+.button-8 {
+    text-decoration: none;
+    all: unset;
+    width: 92px;
+    height: 25px;
+    font-size: 16px;
+    background: transparent;
+    border-left: none;
+    position: relative;
+    color: #f0f0f0;
+
+    z-index: 1;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    transition: .5s;
+
+}
+
+.button-8::after,
+.button-8::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -99999;
+    transition: all .4s;
+}
+
+.button-8::before {
+    transform: translate(0%, 0%);
+    width: 100%;
+    height: 100%;
+    background: #28282d;
+    border-radius: 1000px;
+}
+
+.button-8::after {
+    transform: translate(10px, 10px);
+    width: 35px;
+    height: 35px;
+    background: #ffffff15;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 500px;
+}
+
+.button-8:hover::before {
+    transform: translate(5%, 20%);
+    width: 110%;
+    height: 110%;
+}
+
+.button-8:hover {
+    transform: scale(1.1);
+}
+
+.button-8:hover::after {
+    border-radius: 1000px;
+    transform: translate(0, 0);
+    width: 100%;
+    height: 100%;
+    color: #ff00c8;
+}
+
+.button-8:active::after {
+    transition: 0s;
+    transform: translate(0, 5%);
+}
+
+.button-85 {
+    text-decoration: none;
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #222;
+
+    position: relative;
+    z-index: 0;
+    border-radius: 1000px;
+
+
+    
+}
+
+ 
+
+.button-85:before {
+    content: "";
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: 7px;
+    left: 4px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: 100%;
+    height: 100%;
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 1000px;
+}
+
+@keyframes glowing-button-85 {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.button-85:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 1000px;
+}
+
+@media(max-width:1000px) {
+    .main_abt {
+        flex-direction: column;
+    }
+}
+@media(max-width:500px) {
+   .contactbtn{
+    flex-direction: column;
+        align-items: center;
+   }
+   .contactbtn a {
+    margin-bottom: 6vw;
+   }
+}
