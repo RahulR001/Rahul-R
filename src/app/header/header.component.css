@@ -33,14 +33,12 @@ a:hover {
 .btn {
     border-radius: 33rem;
     border: 2px;
-
 }
 
 .btn:hover {
     color: black;
     background-color: #ffffff;
     border-color: #ffffff;
-
 }
 
 .btn1 {
@@ -61,32 +59,25 @@ a:hover {
 }
 
 .offcanvas-body {
-
     background-color: black;
 }
 
 .offcanvas-header {
-
     background-color: black;
-
 }
 
 .navbar-toggler {
     background-color: #ffffff;
-        margin: 0vw 2vw 3vw;
+    margin: 0vw 2vw 3vw;
 }
 
 .navbar-toggler-icon {
-
     width: 1em;
     height: 1em;
-
 }
 
 .offcanvas {
-
     max-width: 37%;
-
 }
 
 .waves {
@@ -105,8 +96,6 @@ a:hover {
     text-align: center;
     background-color: white;
 }
-
-/* Animation */
 
 .parallax>use {
     animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
@@ -142,11 +131,8 @@ a:hover {
     }
 }
 
-/*Shrinking for mobile*/
 @media (max-width: 768px) {
     .waves {
-
-
         margin-bottom: px;
     }
 

@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 
-
 .main_abt {
     display: flex;
     flex-direction: row;
     margin: 2vw 4.5vw;
     flex-wrap: wrap;
-        justify-content: center;
+    justify-content: center;
 }
 
 .about_info {
@@ -27,7 +26,6 @@
 .head {
     color: bisque;
     letter-spacing: 2px;
-     
     text-align: left;
     font-size: calc(1vw + 1rem);
 }
@@ -35,12 +33,10 @@
 .skills {
     color: whitesmoke;
     text-align: justify;
-        margin: 0.1vw 3.5vw;
-    /* padding-top: 43px; */
+    margin: 0.1vw 3.5vw;
 }
 
 .skill_list {
-     
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -56,18 +52,14 @@
     margin: 3vw;
     display: flex;
     justify-content: center;
-        gap: 5%;
-
+    gap: 5%;
 }
 
- 
-
 .resumebtn {
-        margin: 3vw;
-            display: flex;
-            justify-content: center;
-            margin-right: 3vw;
-
+    margin: 3vw;
+    display: flex;
+    justify-content: center;
+    margin-right: 3vw;
 }
 
 a {
@@ -77,8 +69,6 @@ a {
 a:hover {
     transform: scale(1.1);
 }
-
-
 
 .button-8 {
     text-decoration: none;
@@ -90,7 +80,6 @@ a:hover {
     border-left: none;
     position: relative;
     color: #f0f0f0;
-
     z-index: 1;
     padding: 10px 20px;
     display: flex;
@@ -101,7 +90,6 @@ a:hover {
     -webkit-user-select: none;
     touch-action: manipulation;
     transition: .5s;
-
 }
 
 .button-8::after,
@@ -162,16 +150,10 @@ a:hover {
     outline: none;
     color: rgb(255, 255, 255);
     background: #222;
-
     position: relative;
     z-index: 0;
     border-radius: 1000px;
-
-
-    
 }
-
- 
 
 .button-85:before {
     content: "";
@@ -221,12 +203,14 @@ a:hover {
         flex-direction: column;
     }
 }
+
 @media(max-width:500px) {
-   .contactbtn{
-    flex-direction: column;
+    .contactbtn {
+        flex-direction: column;
         align-items: center;
-   }
-   .contactbtn a {
-    margin-bottom: 6vw;
-   }
+    }
+
+    .contactbtn a {
+        margin-bottom: 6vw;
+    }
 }
